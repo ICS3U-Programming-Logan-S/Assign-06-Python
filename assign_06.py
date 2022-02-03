@@ -208,7 +208,7 @@ def list_position_int():
         amount_1_int = int(amount_1)
     except Exception:
         print("Invalid input. Try again!")
-        list_position_float()
+        list_position_int()
 
     # Entering input for each index of the list with he size the user entered
     for i in range(1, amount_1_int + 1):
@@ -219,7 +219,7 @@ def list_position_int():
             value_1_int = int(value_1)
         except Exception:
             print("Invalid input. Should be integers!")
-            list_position_float()
+            list_position_int()
         index_list1.append(value_1_int)
 
     item_1 = input("Please enter the integer you want to find: ")
@@ -229,7 +229,7 @@ def list_position_int():
         item_1_int = int(item_1)
     except Exception:
         print("Invalid input. Try again!")
-        list_position_float()
+        list_position_int()
 
     try:
         print("The position of your number = ", index_list1.index(item_1_int))
